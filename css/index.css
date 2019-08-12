@@ -2,7 +2,7 @@
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border:1px solid black !important;
+	/* border:1px solid black !important; */
 }
 
 html, body {
@@ -18,7 +18,9 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	line-height: 1;
+    line-height: 1;
+    height: 100%;
+    width:100%;
 }
 ol, ul {
 	list-style: none;
@@ -88,7 +90,7 @@ table {
 }
 .main-one{
     width: 30vw;
-    margin-left:150px;
+    margin-top:20px;
 }
 .big{
 	
@@ -107,7 +109,7 @@ table {
     flex-flow: row wrap;
     width:30vw;
     justify-content: center;
-    /* padding-left:220px; */
+    margin-top:20px;
 }
 
 a.button{
@@ -133,7 +135,7 @@ a.button{
 	width:80vw;
 	justify-content: space-between;
 	margin-top:100px;
-	margin-bottom:40px;
+	margin-bottom:10px;
 	padding-top:50px;
 }
 .feat .one{
@@ -142,7 +144,7 @@ a.button{
 .pro{
 	display:flex;
 	width:80vw;
-	margin-top:40px;
+	margin-top:10px;
 }
 .pro .three, .pro .four{
 	margin-right:30px;
@@ -332,6 +334,8 @@ a.button{
     }
     .container nav{
         flex-flow:row wrap;
+        width:80vw;
+        justify-content: space-between;
     }
 
 .main{
@@ -340,15 +344,17 @@ a.button{
 .container .main-one{
     width:80vw;
     justify-content: center;
+   
+}
+
+.big{
+    font-size:5rem;
 }
 
 .button-place{
     width:80vw;
+    
 }
-
-    .container nav .logo{
-        width:100%;
-    }
 
     .feat{
         margin-top:70px;
@@ -356,7 +362,10 @@ a.button{
     }
 
     .i-h-img{
-        width: 100vw;
-        align-items: flex-end;
+        display:inline-block;
+        width: 80vw;
+        order:-1;
+        text-align: center;
+        margin:30px 0;
     }
-}
+} 

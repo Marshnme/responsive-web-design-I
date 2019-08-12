@@ -1,3 +1,425 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	/* border:1px solid black !important; */
+}
+
+html, body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+    line-height: 1;
+    height: 100%;
+    width:100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
+/* Your code starts here! */
+
+/* INDEX.HTML */
+
+.container{ 
+	justify-content: center;
+	display:flex;
+	flex-flow: row wrap;
+	
+	
+	
+
+} 
+.container header{
+	display:flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.container  nav {
+	display:flex;
+	width: 60vw;
+	justify-content: space-around;
+	align-items: center;
+	margin-top:45px;
+	
+}
+
+.container header nav a{
+	text-decoration:none;
+	color:grey;
+	font-family: 'Lacquer', sans-serif;	 
+}
+
+.i-h-img{
+    display:flex;
+    flex-flow: row wrap;
+    width:20vw;
+    justify-content: flex-start;
+    margin-top:30px;
+}
+
+
+
+.main{
+	display:flex ;
+	justify-content: space-around ;
+	width:80vw;	
+	margin-top:100px;
+}
+.main-one{
+    width: 30vw;
+    margin-top:20px;
+}
+.big{
+	margin-top:0;
+    font-size:6rem;
+    text-align: center;
+	
+
+}
+
+.main-two{
+    width:30vw;
+}
+
+.button-place{
+    display:flex;
+    flex-flow: row wrap;
+    width:30vw;
+    justify-content: center;
+    margin-top:20px;
+}
+
+a.button{
+    
+	
+	border: 1px solid black;
+	text-decoration: none;
+	padding:5px 50px;
+    font-family: 'Lacquer', sans-serif;
+    color:black;
+   
+    
+	
+	
+
+}
+
+
+
+.feat{
+	border-top: 1px solid black;
+	display:flex;
+	width:80vw;
+	justify-content: space-between;
+	margin-top:100px;
+	margin-bottom:10px;
+	padding-top:50px;
+}
+.feat .one{
+	margin-right:30px;
+}
+.pro{
+	display:flex;
+	width:80vw;
+	margin-top:10px;
+}
+.pro .three, .pro .four{
+	margin-right:30px;
+}
+
+.img-middle{
+	display:flex;
+	flex-flow:row wrap;
+	width:80vw;
+}
+.middle-img{
+	width:80vw;
+}
+
+.container h2{
+	font-size:20px;
+}
+.container footer{
+	border-top:1px solid black;
+	display:flex;
+	flex-flow:row wrap;
+	width:80vw;
+	margin-top:20px;
+	padding-top:20px;
+	
+}
+.copyright{
+	width: 80vw;
+	margin-bottom:30px;
+	margin-top:30px;
+	display:flex;
+	flex-flow:row wrap; 
+	justify-content: center; 
+}
+
+
+.info{
+
+}
+
+.container footer address div.info span.pushaway{
+	display:flex;
+	margin-top:20px;
+
+	
+	
+}
+
+
+
+/* SERVICES PAGE */
+.parent{ 
+	justify-content: center;
+	display:flex;
+	flex-flow: row wrap;
+	
+}
+
+.parent .s-header{
+	
+	display:flex;
+	flex-flow: row wrap;
+	width:90vw;
+	margin-top:25px;
+	margin-bottom:50px;
+}
+.parent .s-header nav{
+	display:flex;
+	justify-content: space-around;
+	width:90vw;
+	align-items: center;
+	margin-bottom:20px;
+	
+}
+.parent nav a{
+	width:90vw;
+	text-decoration: none;
+	color:grey;
+	font-family: 'Lacquer', sans-serif;
+}
+
+.parent .header-img{
+	display: flex;
+	flex-flow: row wrap;
+	
+}
+
+.parent .header-img .services-header-img{
+	width:90vw;
+	margin-bottom:30px;
+}
+
+.parent .s-section{
+	display:flex;
+	flex-flow:row wrap;
+	width:90vw;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding-top:30px;
+	
+	
+	
+}
+.parent .s-section div{
+	width:47%;
+	margin-top:25px;
+	border:1px solid black;
+	background: lightgrey;
+	padding:30px;
+}
+
+
+
+.parent h1{
+	font-size:30px; 
+}
+.parent h2{
+	font-size:20px;
+}
+
+.parent .s-section-two{
+	display:flex;
+	flex-flow:row wrap;
+	width:90vw;
+	justify-content: space-between;
+	margin-top:50px;
+	border-top:1px solid black;
+	padding-top:40px;
+}
+
+.parent .s-section-two div{
+	width:47%;
+	
+}
+.parent  .s-copyright-holder{
+	display:flex;
+	width:100vw;
+	justify-content: center;
+}
+.parent .s-copyright-holder .s-copyright {
+	margin-top:80px;
+	margin-bottom:20px;
+	width:90vw;
+	text-align: center
+}
+
+.parent .s-section .s-button{
+	display:flex;
+	width:40%;
+	height:20%;
+	text-decoration: none;
+	margin-top:20px;
+	margin-bottom:10px;
+	border:1px solid black;
+	background:white;
+	justify-content: center;
+	align-items:center;
+	color:black;
+	border-radius: 10px;
+	
+
+}
+
+.parent .s-section-two ul{
+
+	list-style-type: square;
+	margin-top:20px;
+	padding-left:0px;
+	
+}
+.parent .s-section-two ul li {
+	margin-top:20px;
+    margin-left:20px;
+}
+
+
+
+
+
+
+
+/* MEDIA QUIRIES */
+
+@media screen and (max-width:800px){
+    .container header section.main img{
+        display:none;
+    }
+    .container nav{
+        flex-flow:row wrap;
+        width:80vw;
+        justify-content: space-between;
+        margin-top:20px;
+    }
+
+    .main{
+        margin-top:50px;
+    }
+    .container .main-one{
+        width:80vw;
+        justify-content: center;
+    }
+
+    .big{
+        font-size:5rem;
+    }
+
+    .button-place{
+        width:80vw;
+        
+    }
+
+    .feat{
+        margin-top:70px;
+        padding-top:25px;
+    }
+
+    .i-h-img{
+        display:inline-block;
+        width: 80vw;
+        order:-1;
+        text-align: center;
+        margin:30px 0;
+    }
+} 
+
+
+
+
+@media screen and (max-width:500px){
+    .container nav{
+        flex-flow: column wrap;
+        font-size:1.5rem;
+        
+    }
+
+    .container nav a.mobile{
+        /* padding-bottom:60px; */
+    }
+    .container nav a{
+        display:flex;
+        width:80vw;
+        justify-content: center;
+        align-content: center;
+        padding:20px 0;
+        border-top:1px solid grey;
+    }
+    .container nav a:last-child{
+        border-bottom:1px solid grey;
+    }
+    .i-h-img{
+        margin-bottom:0px;
+    }
+
+    .feat{
+        flex-flow:row wrap;
+    }
+    .feat .one{
+        width:80vw;
+        margin:0;
+    }
+    .feat .two{
+        width:80vw;
+    }
+
+    .pro{
+        flex-flow:row wrap;
+    }
+
+    .pro .three{
+        margin:0;
+    }
+
+    .pro .four{
+        margin:0;
+    }
+   
+}

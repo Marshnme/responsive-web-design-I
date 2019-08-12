@@ -2,7 +2,7 @@
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	/* border:1px solid black !important; */
+	border:1px solid black !important;
 }
 
 html, body {
@@ -56,10 +56,10 @@ table {
 	flex-flow: row wrap;
 }
 
-.container nav {
+.container  nav {
 	display:flex;
-	width: 80vw;
-	justify-content: space-between;
+	width: 60vw;
+	justify-content: space-evenly;
 	align-items: center;
 	margin-top:20px;
 	
@@ -71,14 +71,14 @@ table {
 	font-family: 'Lacquer', sans-serif;	 
 }
 
-
-.big{
-	display:flex;
-	font-size:6rem;
-	text-align: center;
-	align-items: center;
-	margin-left:100px;
+.i-h-img{
+    display:flex;
+    flex-flow: row wrap;
+    width:20vw;
+    justify-content: flex-start;
 }
+
+
 
 .main{
 	display:flex ;
@@ -86,23 +86,45 @@ table {
 	width:80vw;	
 	margin-top:100px;
 }
+.main-one{
+    width: 30vw;
+    margin-left:150px;
+}
+.big{
+	
+	font-size:6rem;
+	text-align: center;
+	align-items: center;
 
-.main .button-place a.button{
+}
+
+.main-two{
+    width:30vw;
+}
+
+.button-place{
+    display:flex;
+    flex-flow: row wrap;
+    width:30vw;
+    justify-content: center;
+    /* padding-left:220px; */
+}
+
+a.button{
+    
 	
 	border: 1px solid black;
 	text-decoration: none;
 	padding:5px 50px;
-	font-family: 'Lacquer', sans-serif;
+    font-family: 'Lacquer', sans-serif;
+    color:black;
+   
+    
 	
 	
 
 }
 
-.main .button-place{
-	display:flex;
-	flex-flow:row no-wrap;
-
-}
 
 
 .feat{
@@ -122,8 +144,8 @@ table {
 	width:80vw;
 	margin-top:40px;
 }
-.pro .one, .pro .two{
-	margin-right:40px;
+.pro .three, .pro .four{
+	margin-right:30px;
 }
 
 .img-middle{
@@ -132,7 +154,7 @@ table {
 	width:80vw;
 }
 .middle-img{
-	width:100vw;
+	width:80vw;
 }
 
 .container h2{
@@ -143,14 +165,14 @@ table {
 	display:flex;
 	flex-flow:row wrap;
 	width:80vw;
-	margin-top:50px;
-	padding-top:60px;
+	margin-top:20px;
+	padding-top:20px;
 	
 }
 .copyright{
 	width: 80vw;
 	margin-bottom:30px;
-	margin-top:100px;
+	margin-top:30px;
 	display:flex;
 	flex-flow:row wrap; 
 	justify-content: center; 
@@ -302,3 +324,39 @@ table {
 
 
 
+/* MEDIA QUIRIES */
+
+@media screen and (max-width:800px){
+    .container header section.main img{
+        display:none;
+    }
+    .container nav{
+        flex-flow:row wrap;
+    }
+
+.main{
+    margin-top:0px;
+}
+.container .main-one{
+    width:80vw;
+    justify-content: center;
+}
+
+.button-place{
+    width:80vw;
+}
+
+    .container nav .logo{
+        width:100%;
+    }
+
+    .feat{
+        margin-top:70px;
+        padding-top:25px;
+    }
+
+    .i-h-img{
+        width: 100vw;
+        align-items: flex-end;
+    }
+}
